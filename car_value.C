@@ -4,36 +4,36 @@
 
 void main()
 {
-// declarar variavel-valor do carro
-// x = valor do carro
+// declare variable value of the car
+// x = car value
 float x,ipi,tr,ar, dh, cp;
 int opcao;
 
-// Valor do carro sem acessorios
+// Value of the car without accessories
 printf("Digite o valor do carro que deseja");
 scanf("%f",&x);
 
-// valor do IPI
+// value of IPI
 ipi = (x*1.08)-x;
 printf("\n o valor do ipi do carro e =%.2f", ipi);
 
-//valor do trio-eletrico - tr
+//trio-electric value - tr
 tr= (x+ipi)*1.02-x;
 printf("\n o valor do trio-eletrico e = %.2f", tr);
 
-// valor do ar-condicionado - ar
+// air conditioning value - ar
 ar= (x*1.02)-x;
 printf("\n o valor do ar-condicionado e =%.2f", ar);
 
-// valor da direcao hidraulica - dh
+// hydraulic steering value - dh
 dh = (x*1.02)-x;
 printf("\n o valor da direcao hidraulica e %.2f", dh);
 
-// valor do carro completo - cp
+// complete car value - cp
 cp = x+ipi+tr+ar+dh+0.035;
 printf("\n o valor do carro completo com o desconto e=%.2f", cp);
 
-//Criando menu para o usuario
+//Creating menu for the user
 printf("\n\nDigite a opcao que deseja adicionar ao seu carro");
 printf("\n\n1- trio eletrico");
 printf(" \n2- ar condicionado");
@@ -44,7 +44,7 @@ printf(" \n6- ar condicionado + direcao hidraulica");
 printf(" \n7- completo");
 scanf("%d", &opcao);
 
-//dando resultado para o usuario
+//giving result to the user
 switch(opcao){
     case 1:
         printf("o valor do carro com o trio eletrico = %.2f", x+tr);
